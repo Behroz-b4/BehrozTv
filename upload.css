@@ -1,0 +1,140 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8f8f8;
+}
+
+.create__form {
+    display: flex;
+    align-items: center;
+    width: 40%;
+    background: #fff;
+    padding: 20px;
+    box-shadow: var(--around-shadow);
+    border-radius: var(--border-radius-small);
+}
+
+.create__form__container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.create__heading__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.heading__close__container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.create__input__container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.create__input__container label {
+    margin: 0 0 10px 4px;
+}
+
+.create__input {
+    height: 40px;
+    padding: 12px 20px;
+    border-radius: var(--border-radius-small);
+    border: 1px solid #ccc;
+    background: #fff;
+    font-size: 14px;
+    outline: none;
+    transition: all 140ms ease-in;
+}
+
+.create__input:focus {
+    border: 1px solid var(--theme-color);
+    box-shadow: 0 0 0 4px var(--btn-hover-bg);
+}
+
+.textarea__input {
+    height: 120px;
+    resize: vertical;
+}
+
+.create__input__privacy {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.create__input__privacy label {
+    margin: 0 0 0 10px;
+}
+
+.input__radio {
+    height: 20px;
+}
+
+.input__radio:focus {
+    box-shadow: none;
+    border: none;
+}
+
+.create__btn__submit {
+    height: 40px;
+    border-radius: var(--border-radius-small);
+    border: none;
+    color: #fff;font-size: 14px;
+    background: var(--theme-color);
+    cursor: pointer;
+    transition: all 140ms ease-in;
+}
+
+.create__btn__submit:hover {
+    opacity: .7;
+}
+
+.create__select__video__btn[type="file"] {
+    display: none;
+}
+
+.create__btn__upload {
+    flex-direction: row;
+    height: 40px;
+    gap: 10px;
+    align-items: center;
+}
+
+.create__btn__upload label {
+    margin: 0;
+}
+
+.create__label__video__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: var(--border-radius-small);
+    transition: all 140ms ease-in;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+.create__label__video__btn:hover {
+    box-shadow: var(--around-shadow);
+    border: 1px solid #fff;
+}
+
+@media (max-width: 767px) {
+    .create__form {
+        width: 100%;
+        border-radius: 0;
+    }
+    
+}

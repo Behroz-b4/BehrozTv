@@ -1,0 +1,400 @@
+.sNav.active + .wrArea {
+    margin-left: 90px;
+}
+
+.wrArea {
+    display: flex;
+    transition: all 140ms ease-in;
+    margin-left: 250px;
+    min-height: calc(100vh - 120px);
+    padding: 20px 0 0 0;
+}
+
+.rvCon {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 30px 0 10px;
+}
+
+.wvCon {
+    flex: 2;
+}
+
+.dplayer {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background-color: #000;
+    border-radius: var(--border-radius-small);
+    overflow: hidden;
+    box-shadow: var(--card-shadow);
+}
+
+.rvcCon {
+    width: 100%;
+    padding: 6px;
+    border-radius: var(--border-radius-small);
+    transition: all 140ms ease-in;
+    position: relative;
+}
+
+.rvcCon:hover {
+    background: var(--btn-hover-bg);
+}
+
+.rvCard {
+    display: flex;;
+}
+
+.rvCard img {
+    width: 50%;
+    height: 100%;
+    margin: 0 10px 0 0;
+}
+
+.rvTitle {
+    font-size: 15px !important;
+}
+
+.wvTitle {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.ciCon {
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.wcName {
+    font-size: 14px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.wvbCon {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.wvBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0d0d0d;
+    text-decoration: none;
+    height: 40px;
+    width: auto;
+    background: #f8f8f8;
+    border-radius: var(--border-radius-small);
+    transition: all 140ms ease-in;
+    cursor: pointer;
+    flex: 1;
+    font-size: 14px;
+}
+
+.wvBtn:hover {
+    background: #fff;
+    box-shadow: var(--around-shadow);
+}
+
+.wvBtn .fa-solid {
+    font-size: 16px;
+}
+
+.wvmBtn {
+    width: 40px;
+}
+
+.wvmBtn .fa-solid, .fas {
+    margin-right: 0;
+}
+
+.wvmCon {
+    position: relative;
+}
+
+.wvvbCon {
+    position: absolute;
+    right: 0;
+    top: 50px;
+    background: #fff;
+    box-shadow: var(--around-shadow);
+    border-radius: var(--border-radius-small);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 140ms ease-in;
+    z-index: 999;
+}
+
+.wvvbCon.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.wvvBtn {
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #666;
+    cursor: pointer;
+    border-radius: var(--border-radius-small);
+}
+
+.wvvBtn:hover {
+    color: #0d0d0d;
+    background: #f8f8f8;
+}
+
+.puBackground {
+    display: block;
+    background: #000;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 888;
+    opacity: 0.7;
+    visibility: hidden;
+}
+
+.wvsCon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border-radius: var(--border-radius-small);
+    padding: 20px 10px;
+    z-index: 999;
+    width: 30%;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.wvsCon.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.wvsCon.active + .puBackground {
+    opacity: 0.7;
+    visibility: visible;
+}
+
+.wvsTitle {
+    font-size: 14px;
+    width: 240px;
+    text-align: center;
+}
+
+.wvslCon {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.wvsBtn {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #444;
+    cursor: pointer;
+    transition: all 140ms ease-in;
+    border-radius: var(--border-radius-small);
+}
+
+.wvsBtn:hover {
+    background: #f8f8f8;
+}
+
+.wvsBtn .fa-brands {
+    margin-right: 10px;
+    color: #000;
+    font-size: 20px;
+}
+
+.wvsBtn .fa-solid {
+    font-size: 15px;
+    color: #000;
+}
+
+.cfollowBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(228deg, #00bfff 9%, #009dff 30%, #0077ff 65%, #0055ff 94%);
+    color: #fff;
+    font-weight: 900;
+    height: 40px;
+    width: auto;
+    padding: 0 40px;
+    border-radius: var(--border-radius-small);
+    margin-left: 20px;
+    cursor: pointer;
+    transition: all 140ms ease-in;
+}
+
+.cfollowBtn:hover {
+    background: linear-gradient(228deg, #00bfff 9%, #00bfff 30%, #00bfff 65%, #00bfff 94%);
+}
+
+.dhCon {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+.dhCon .hastags {
+    font-weight: 900;
+    margin-left: 10px;
+    color: var(--theme-color);
+    cursor: pointer;
+}
+
+.wvDescription {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+@media (max-width: 1023px) {
+    .wrArea {
+        margin-left: 200px;
+        flex-direction: column;
+    }
+
+    .sNav.active + .wrArea {
+        margin-left: 70px;
+    }
+
+    .wvCon {
+        padding: 0 20px 0 0;
+    }
+
+    .rvCon {
+        padding: 0 20px 0 0;
+    }
+
+    .rvTitle {
+        font-size: 17px !important;
+    }
+
+    .wvsCon {
+        width: 50%;
+        padding: 20px 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    .wrArea {
+        margin-left: 0;
+        padding: 0;
+    }
+
+    .sNav.active + .wrArea {
+        margin-left: 0;
+    }
+
+    .wvCon {
+        padding: 0;
+    }
+
+    .rvCon {
+        padding: 0;
+    }
+
+    .rvcCon {
+        padding: 10px 0;
+        border-radius: 0;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .rvcCon:hover {
+        background: #fff;
+    }
+
+    .dplayer {
+        border-radius: 0;
+    }
+
+    .wvInfo {
+        padding: 0 10px 20px 10px;
+    }
+
+    .wvTitle {
+        font-size: 16px;
+    }
+
+    .wvBtn {
+        font-size: 12px;
+    }
+
+    .wvBtn .fa-solid {
+        font-size: 14px;
+        margin-right: 6px;
+    }
+
+    .wvmBtn .fa-solid {
+        margin: 0;
+    }
+
+    .cfollowBtn {
+        font-size: 14px;
+        padding: 0 30px;
+    }
+
+    .dhCon {
+        font-size: 13px;
+    }
+
+    .dhCon .hastags {
+        margin-left: 6px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .wvDescription {
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .rvInfo {
+        margin: 0;
+    }
+
+    .rvTitle {
+        font-size: 14px !important;
+    }
+
+    .wvsCon {
+        width: 90%;
+        padding: 20px 10px;
+    }
+
+    .wvsBtn .fa-solid {
+        margin-right: 10px;
+    }
+
+}

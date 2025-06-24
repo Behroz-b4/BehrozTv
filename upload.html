@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - BehrozTv</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="upload.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+<form class="create__form" action="/">
+    <div class="create__form__container">
+        <div class="create__heading__container"><h2>Upload video information</h2><a class="login__close__btn" href="/"><i class="fa-solid fa-xmark login__close__icon"></i></a></div>
+        
+        <div class="create__input__container">
+            <label for="Title">Title</label>
+            <input type="text" class="create__input" placeholder="Enter Title" required>
+        </div>
+
+        <div class="create__input__container">
+            <label for="description">Description</label>
+            <textarea class="create__input textarea__input" placeholder="Enter Description"></textarea>
+        </div>
+
+        <div class="create__input__container">
+            <label for="hastag">Tags</label>
+            <input type="text" class="create__input" placeholder="Use #hastags, saperete with commas.">
+        </div>
+        <div class="create__input__container">
+        <label for="category">Category:</label>
+<select class="create__input" id="category" name="category" required>
+    <option value="" disabled selected>-- Choose a Category --</option>
+    <option value="Autos & Vehicles">Autos & Vehicles</option>
+    <option value="Comedy">Comedy</option>
+    <option value="Education">Education</option>
+    <option value="Entertainment">Entertainment</option>
+    <option value="Film & Animation">Film & Animation</option>
+    <option value="Gaming">Gaming</option>
+    <option value="Howto & Style">Howto & Style</option>
+    <option value="Music">Music</option>
+    <option value="News">News</option>
+    <option value="Nonprofits & Activism">Nonprofits & Activism</option>
+    <option value="People & Blogs">People & Blogs</option>
+    <option value="Pets & Animals">Pets & Animals</option>
+    <option value="Science & Technology">Science & Technology</option>
+    <option value="Sports">Sports</option>
+    <option value="Travel & Events">Travel & Events</option>
+</select>
+</div>
+
+    <div class="create__input__container">
+        <label for="Privacy">Privacy Settings</label>
+        <div class="create__input__privacy">
+            <label for="Privacy">Public</label>
+            <input type="radio" class="create__input input__radio" name="Privacy" value="Public" required>
+        </div>
+        <div class="create__input__privacy">
+            <label for="Privacy">Private</label>
+            <input type="radio" class="create__input input__radio" name="Privacy" value="Private" required>
+        </div>
+        <div class="create__input__privacy">
+            <label for="Privacy">Password Protected</label>
+            <input type="radio" class="create__input input__radio" name="Privacy" value="Password Protected" required>
+        </div>
+    </div>
+
+    <div class="create__input__container create__btn__upload">
+            <label >Select Video:</label>
+            <label for="videoFile" class="create__label__video__btn" id="fileName">Choose File</label>
+            <input id="videoFile" type="file" class="create__select__video__btn" accept="Video/*" required>
+        
+        </div>
+
+        <button class="create__btn__submit" type="submit">Upload</button>
+    </div>
+</form>
+
+<script>
+    const videoFile = document.getElementById("videoFile");
+const fileName = document.getElementById("fileName");
+
+videoFile.addEventListener("change", function () {
+  if (this.files.length > 0) {
+    fileName.textContent = this.files[0].name;
+  } else {
+    fileName.textContent = "No file selected";
+  }
+});
+</script>
+</body>
+</html>
